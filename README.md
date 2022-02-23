@@ -41,7 +41,7 @@ beldine@ubuntu:~/monty$
 ```
 # The Monty Program
 > The aim of the project is to build on understanding of data structures, specifically Stacks and Queues and the use of FIFO and LIFO, by implementing features that run various monty opcodes e.g push, pall, pop, pint etc:
-# ![Stack and Queue](https://beldine-moturi.github.io/monty/images/image1.png)
+# ![Stack and Queue](./images/image1.png)
 
 ## Installation
 Clone this repository:
