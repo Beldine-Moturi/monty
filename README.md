@@ -62,6 +62,19 @@ Any output will be printed on stdout. Any error message will be printed on stder
 $ ./monty file
 ```
 Where file is the path to the file containing Monty byte code.
+### Example:
+```
+beldine@ubuntu:~/monty$ cat -e bytecodes/00.m
+push 1$
+push 2$
+push 3$
+pall$
+beldine@ubuntu:~/monty$ ./monty bytecodes/00.m
+3
+2
+1
+beldine@ubuntu:~/monty$
+```
 
 ## Technologies used
 - Language: C programming language, Bash
