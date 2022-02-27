@@ -19,7 +19,7 @@ void push(stack_t **stack, unsigned int line_number)
 		push_error(line_number);
 	for (i = 0; arg[i] != '\0'; i++)
 	{
-		if ((isdigit(arg[i])) == 0)
+		if ((isdigit(arg[i])) == 0 && arg[i] != '-')
 			push_error(line_number);
 	}
 
