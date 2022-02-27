@@ -59,7 +59,7 @@ typedef struct arg
 {
 	char *argument;
 } arg;
-extern arg Arg;
+arg Arg;
 
 
 void file_error(char *file);

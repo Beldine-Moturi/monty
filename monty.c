@@ -10,9 +10,6 @@
  *       passed to the program
  *Return: 0 on success
  */
-
-arg Arg;
-
 int main(int argc, char *argv[])
 {
 	char *line = NULL;
