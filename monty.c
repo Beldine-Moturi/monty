@@ -52,32 +52,3 @@ int main(int argc, char *argv[])
 	fclose(fd);
 	exit(EXIT_SUCCESS);
 }
-
-
-/**
- *file_error - prints an error message and exits
- * @file: the name of the file
- *
- *Description: prints an error message if fopen(file) fails
- *
- *Return: void
- */
-void file_error(char *file)
-{
-	fprintf(stderr, "Error: Can't open file %s\n", file);
-	exit(EXIT_FAILURE);
-}
-
-
-/**
- *usage_error - prints an error message and exits
- *
- *Description: prints an error message if user does not give any file
- *             or if they give more than one file argument
- *Return: void
- */
-void usage_error(void)
-{
-	fprintf(stderr, "USAGE: monty file\n");
-	exit(EXIT_FAILURE);
-}

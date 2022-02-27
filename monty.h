@@ -64,6 +64,8 @@ extern arg Arg;
 
 void file_error(char *file);
 void usage_error(void);
+void push_error(unsigned int line_number);
+
 void free_stack(stack_t **stack);
 void run_opcode(char *opcode, stack_t **stack, unsigned int line_number);
 
