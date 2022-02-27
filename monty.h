@@ -15,6 +15,7 @@
 	{					\
 		{"push", push},			\
 		{"pall", pall},			\
+		{"pint", pint},			\
 		{NULL, NULL}			\
 	}
 
