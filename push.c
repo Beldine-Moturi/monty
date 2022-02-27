@@ -15,13 +15,12 @@ void push(stack_t **stack, unsigned int line_number)
 	int data, i;
 	stack_t *element;
 
+	if (arg == NULL)
+		push_error(line_number);
 	for (i = 0; arg[i] != '\0'; i++)
 	{
 		if ((isdigit(arg[i])) == 0)
-		{
-			fprintf(stderr, "L%d: usage: push integer\n", line_number);
-			exit(EXIT_FAILURE);
-		}
+			push_error(line_number);
 	}
 
 	data = atoi(arg);
