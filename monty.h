@@ -33,7 +33,6 @@ typedef struct stack_s
 	struct stack_s *prev;
 	struct stack_s *next;
 } stack_t;
-stack_t *STACK;
 
 /**
  * struct instruction_s - opcode and its function
@@ -60,7 +59,7 @@ typedef struct arg
 {
 	char *argument;
 } arg;
-arg Arg;
+extern arg Arg;
 
 
 void file_error(char *file);

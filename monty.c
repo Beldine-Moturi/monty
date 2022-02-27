@@ -11,6 +11,8 @@
  *Return: 0 on success
  */
 
+arg Arg;
+
 int main(int argc, char *argv[])
 {
 	char *line = NULL;
@@ -18,6 +20,7 @@ int main(int argc, char *argv[])
 	char *opcode = NULL;
 	unsigned int line_number = 1;
 	FILE *fd;
+	stack_t *STACK;
 
 	STACK = NULL;
 	if (argc != 2)
