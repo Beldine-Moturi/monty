@@ -14,10 +14,7 @@ void pall(stack_t **stack, unsigned int line_number __attribute__((unused)))
 	stack_t *temp;
 
 	if (stack == NULL || *stack == NULL)
-	{
-		printf("Pall: Stack is empty\n");
 		return;
-	}
 	temp = *stack;
 	while (temp != NULL)
 	{
